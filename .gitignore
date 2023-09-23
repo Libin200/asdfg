@@ -1,0 +1,7 @@
+*.pyc
+*~
+__pycache__
+sam
+db.sqlite3
+/sampro/samapp/static
+.DS_Stor

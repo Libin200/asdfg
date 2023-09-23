@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <style>
+            td{
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <table>
+                <tr><td>id</td>
+                    <td><input type="text" name="id" id=""></td>
+                </tr>
+                <tr>
+                    <td>name</td>
+                    <td><input type="text" name="username" id=""></td>
+                </tr>
+                <tr>
+                    <td>upload your file</td>
+                    <td><input type="file" name="file" id=""></td>
+                </tr>
+                <tr><td></td><td><input type="submit" value="next"></td></tr>
+            </table>
+
+        </form>
+    </body>
+</html>

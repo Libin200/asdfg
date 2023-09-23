@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {%load static%}
+  
+  <title>Document</title>
+  <style>td{
+    padding: 20px;
+  }
+  #a{
+    font-size: small;
+    color: red;
+  }
+  </style>
+</head>
+<body>
+   
+   <form action="/update/{{form.id}}" method="post">
+    {% csrf_token %}
+    <table>
+      <tr><td>id</td><td><input type="text" name="id" id="" value="{{form.id}}"><br><span id="a"></span></td></tr>
+      <tr><td>NAME</td><td><input type="text" name="username" id="" value="{{form.username}}"></td></tr>
+      <tr><td>EMAIL</td><td><input type="email" name="email" id="" value="{{form.email}}"></td></tr>
+      <tr><td>SALARY</td><td><input type="text" name="salary" id="" value="{{form.salary}}"></td></tr>
+      <tr><td>CONTACT NO</td><td><input type="text" name="contact_no" id="" value="{{form.contact_no}}"></td></tr>
+      <tr><td></td><td><input type="submit" value="update"></td></tr>
+    </table>
+   </form>
+</body>
+</html>
